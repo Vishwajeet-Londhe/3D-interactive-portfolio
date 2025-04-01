@@ -1,38 +1,107 @@
-.App {
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Section Styles */
+.section {
+  padding: 50px 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Home Page Styles */
+.home-page h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-page p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Job Section Styles */
+.jobs-page h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.jobs-page p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* SPPU Page Styles */
+.sppu-page h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.sppu-page p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Image Styling in Home */
+.home-page img {
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 200px; /* Smaller image size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 300px;
 }

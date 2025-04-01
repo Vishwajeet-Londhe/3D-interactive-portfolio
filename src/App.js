@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Home from "./Home";
+import Jobs from "./jobs";
+import SPPU from "./SPPU";
+import "./App.css"; // Importing the CSS file
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="navbar">
+        <Link to="/">🏠 Home</Link>
+        <Link to="/jobs">💼 Jobs</Link>
+        <Link to="/sppu">🎓 SPPU</Link>
+      </div>
+
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/jobs" element={<Jobs />} />
+          <Route path="/sppu" element={<SPPU />} />
+        </Routes>
+      </div>
+      
+      <footer>
+        <p>&copy; 2025 Vishwajeet Londhe. All Rights Reserved.</p>
+      </footer>
+    </Router>
   );
 }
 
