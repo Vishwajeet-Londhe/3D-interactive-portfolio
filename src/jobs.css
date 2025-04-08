@@ -1,0 +1,22 @@
+.job-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* or center if you want center alignment */
+    gap: 20px; /* space between each job link */
+    margin-top: 20px;
+  }
+  
+  .job-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .job-link:hover {
+    background-color: #f0f0f0;
+  }
+  

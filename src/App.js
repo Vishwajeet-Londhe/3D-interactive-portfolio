@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home";
 import Jobs from "./jobs";
 import SPPU from "./SPPU";
-import "./App.css"; // Importing the CSS file
+import Gephels from "./Gephels";
+import "./App.css"; // Importing CSS
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/jobs" element={<Jobs />} />
+          <Route path="/jobs/gephels" element={<Gephels/>} />
           <Route path="/sppu" element={<SPPU />} />
         </Routes>
       </div>
