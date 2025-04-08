@@ -1,10 +1,18 @@
+// Jobs.js
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Jobs.css";
 
 function Jobs() {
   return (
     <div className="jobs-page section">
       <h2>Job and Internship Opportunities</h2>
-      <p>Stay updated on job openings and internships. I aim to provide the latest opportunities to help students and professionals grow.</p>
+      <ul>
+        <li>
+          <Link to="/jobs/Gephels">Gephels Pvt. Ltd.</Link>
+        </li>
+        {/* You can add more jobs here */}
+      </ul>
     </div>
   );
 }

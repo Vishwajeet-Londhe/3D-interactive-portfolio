@@ -105,3 +105,9 @@ footer {
   color: #fff;
   margin-top: 300px;
 }
+
+.job-link {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 18px;
+}
