@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+![Portfolio Preview](https://github.com/Abhiz2411/3D-interactive-portfolio/blob/main/public/assets/seo/og-image.png?raw=true)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🚀 My Portfolio Website
 
-## Available Scripts
+Welcome to the repository for my personal portfolio website! 🎉 This project is a culmination of creativity, technology, and my dedication to showcasing my skills, projects, and personality in a visually stunning and interactive manner.
 
-In the project directory, you can run:
+### Live preview: https://www.abhijitzende.com/
 
-### `npm start`
+![Preview](https://github.com/Abhiz2411/3D-interactive-portfolio/blob/main/public/assets/preview_video.gif?raw=true)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://github.com/Abhiz2411/3D-interactive-portfolio/blob/main/preview_video.mp4
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is **inspired** by the amazing work of [Naresh Khatri](https://github.com/Naresh-Khatri/Portfolio). His innovative approach to web design and attention to detail has been a huge influence. Thank you, Naresh! 🙏
 
-### `npm test`
+## 🔥 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here are the key highlights of my portfolio:
 
-### `npm run build`
+### 🎹 **3D Interactive Animations**
+- Features a custom-made interactive keyboard built with **Spline**.
+- Each keycap represents a skill and reveals titles and descriptions on hover for an immersive experience.
+- Smooth, responsive 3D interactions that captivate visitors.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ✨ **Slick Interactions & Animations**
+- Powered by **GSAP** and **Framer Motion**, delivering buttery-smooth animations on scroll, hover, and element reveals.
+- Creative motion designs that enhance storytelling and keep users engaged.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🌌 **Space-Themed Design**
+- Particles floating on a dark, cosmic background simulate an outer-space vibe.
+- Adds a unique and futuristic look to the portfolio.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📱 **Responsive Design**
+- Fully responsive layout ensures the website looks and functions beautifully on all devices.
+- Optimized for both desktop and mobile experiences.
 
-### `npm run eject`
+### 🧠 **Innovative Web Design**
+- Combines cutting-edge technology with an intuitive user experience.
+- Creative use of animations and visuals to push the boundaries of modern web design.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The portfolio website is built using the following tools and technologies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Frontend:** Next.js, React, Tailwind CSS, Shadcn, Aceternity UI
+- **Animations:** GSAP, Framer Motion, Spline Runtime
+- **Other Tools:** Resend, Socket.io, Zod
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🌟 Getting Started
 
-## Learn More
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Abhiz2411/3D-interactive-portfolio.git
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the project directory:
+   ```bash
+   cd 3D-interactive-portfolio
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+4. Set up environment variables:
+   ```bash
+   # Create a .env.local file in the root directory
+   touch .env.local
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   # Add your Resend API key
+   RESEND_API_KEY=your_resend_api_key_here
+   ```
 
-### Analyzing the Bundle Size
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+6. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
 
-### Making a Progressive Web App
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is deployed using **Vercel** for its blazing-fast performance and ease of use. You can view the live site [here](https://www.abhijitzende.com/).
 
-### Advanced Configuration
+### Setting up Resend API on Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Sign up for a [Resend](https://resend.com) account and get your API key
+2. Go to your Vercel project settings
+3. Navigate to the "Environment Variables" section
+4. Add a new environment variable:
+   - Name: `RESEND_API_KEY`
+   - Value: Your Resend API key
+5. Save the changes and redeploy your application
 
-### Deployment
+Note: Make sure to keep your API key secret and never commit it to your repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 💖 Acknowledgments
 
-### `npm run build` fails to minify
+A huge shoutout to [Naresh Khatri](https://github.com/Naresh-Khatri/Portfolio) for the inspiration and ideas that sparked this journey! 💡 If you're interested in creative web design, definitely check out his work.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📬 Contact
+
+Feel free to reach out to me for collaboration, feedback, or just to say hi! 😊
+
+- **Email:** abhijitzende75@gmail.com
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/zende-abhijit/)
+
+---
+
+⭐ If you like this project, don't forget to give it a star!
