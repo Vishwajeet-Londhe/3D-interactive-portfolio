@@ -1,10 +1,11 @@
-![Portfolio Preview](https://github.com/Abhiz2411/3D-interactive-portfolio/blob/main/public/assets/seo/og-image.png?raw=true)
+<img width="1896" height="941" alt="landing" src="https://github.com/user-attachments/assets/a1cc5120-4408-499b-8d00-d80f836c61eb" />
+
 
 # 🚀 My Portfolio Website
 
 Welcome to the repository for my personal portfolio website! 🎉 This project is a culmination of creativity, technology, and my dedication to showcasing my skills, projects, and personality in a visually stunning and interactive manner.
 
-### Live preview: https://www.abhijitzende.com/
+### Live preview: https://www.vishwajeetlondhe.me/
 
 ![Preview](https://github.com/Abhiz2411/3D-interactive-portfolio/blob/main/public/assets/preview_video.gif?raw=true)
 
