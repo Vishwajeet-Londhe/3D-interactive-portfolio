@@ -51,23 +51,48 @@ const SocketContextProvider = ({ children }: { children: ReactNode }) => {
   const [users, setUsers] = useState<UserMap>(new Map());
   const [msgs, setMsgs] = useState<Message[]>([]);
 
-  // SETUP SOCKET.IO
+  // SETUP SOCKET.IO - Disabled if NEXT_PUBLIC_WS_URL is not defined
   useEffect(() => {
-    const username =  localStorage.getItem("username") || generateRandomCursor().name
-    const socket = io(process.env.NEXT_PUBLIC_WS_URL!, {
-      query: { username },
-    });
-    setSocket(socket);
-    socket.on("connect", () => {});
-    socket.on("msgs-receive-init", (msgs) => {
-      setMsgs(msgs);
-    });
-    socket.on("msg-receive", (msgs) => {
-      setMsgs((p) => [...p, msgs]);
-    });
-    return () => {
-      socket.disconnect();
-    };
+    // Only connect if WebSocket URL is configured
+    if (!process.env.NEXT_PUBLIC_WS_URL) {
+      console.log("Socket.IO disabled - no WebSocket URL configured");
+      return;
+    }
+
+    try {
+      const username = localStorage.getItem("username") || generateRandomCursor().name;
+      const socket = io(process.env.NEXT_PUBLIC_WS_URL, {
+        query: { username },
+        reconnectionDelay: 1000,
+        reconnection: true,
+        reconnectionDelayMax: 5000,
+        reconnectionAttempts: 5,
+      });
+
+      setSocket(socket);
+
+      socket.on("connect", () => {
+        console.log("Socket.IO connected");
+      });
+
+      socket.on("msgs-receive-init", (msgs) => {
+        setMsgs(msgs);
+      });
+
+      socket.on("msg-receive", (msgs) => {
+        setMsgs((p) => [...p, msgs]);
+      });
+
+      socket.on("connect_error", (error) => {
+        console.warn("Socket.IO connection failed - running in offline mode", error);
+      });
+
+      return () => {
+        socket.disconnect();
+      };
+    } catch (error) {
+      console.warn("Socket.IO initialization failed - running in offline mode", error);
+    }
   }, []);
 
   return (
