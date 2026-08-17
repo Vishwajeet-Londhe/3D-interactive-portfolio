@@ -771,7 +771,7 @@ const projects: Project[] = [
   // +
   { // 01. AI Docker file optimizer project
     id: "aidockerfileoptimizer",
-    category: "AI and DevOps",
+    category: "AI/ML + Web Development",
     title: "AI Dockerfile Optimizer",
     src: "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
     screenshots: ["1.png", "2.png", "3.png"],
@@ -804,7 +804,7 @@ const projects: Project[] = [
   },
   { // 02. FinanceMe project
     id: "financeme",
-    category: "DevOps in Banking and Finance",
+    category: "Machine Learning",
     title: "FinanceMe: Complete DevOps Capstone Project",
     src: "/assets/projects-screenshots/financeme/1.png",
     screenshots: ["/assets/projects-screenshots/financeme/1.png"],
@@ -898,7 +898,7 @@ const projects: Project[] = [
   },
   { // 03. Portfolio project
     id: "portfolio",
-    category: "Portfolio",
+    category: "Artificial Intelligence",
     title: "My Portfolio",
     src: "/assets/projects-screenshots/myportfolio/landing.png",
     screenshots: ["assets/projects-screenshots/myportfolio/landing.png"],
