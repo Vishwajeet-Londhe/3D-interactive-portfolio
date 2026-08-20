@@ -4,8 +4,8 @@ const footer: { title: string; href: string }[] = [
     href: "https://medium.com/@Vishwajeet_Londhe",
   },
   {
-    title: "Newsletter",
-    href: "https://medium.com/@Vishwajeet_Londhe",
+    title: "YouTube",
+    href: "https://youtube.com/@vishwajeet_0104",
   },
 ];
 
