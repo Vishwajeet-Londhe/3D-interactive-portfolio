@@ -308,8 +308,8 @@ const projects: Project[] = [
   { // 01. KrishiRakshak project
     id: "krishirakshak",
     category: "AI/ML + Full Stack",
-    title: "KrishiRakshak: AI-Powered Plant Disease Detection and Pest Management",
-    src: "/assets/projects-screenshots/1.Krishi-Hackathon/1.png",
+    title: "Crop Disease And Pest Control",
+    src: "/assets/projects-screenshots/1.Krishi-Hackathon/Home.jpg",
     screenshots: ["1.png", "Disease.jpg", "Government Scheme.png", "History.jpg", "Home.jpg", "Weather Based Prediction.png"],
     live: "https://ai-docker-file-optimizer.netlify.app/",
     github:"https://github.com/Vishwajeet-Londhe/hackathon-KrishiRakshak",
@@ -344,7 +344,7 @@ const projects: Project[] = [
     id: "face-mask-detection",
     category: "Machine Learning",
     title: "Face Mask Detection",
-    src: "/assets/projects-screenshots/2.Face Mask Detection/Mask.png",
+    src: "/assets/projects-screenshots/2.Face-Mask-Detection/No Mask.png",
     screenshots: ["Mask.png", "No Mask.png", "Training Model.png", "With Mask Dataset.png", "Without Mask Dataset.png"],
     skills: {
       frontend: [
@@ -535,7 +535,7 @@ const projects: Project[] = [
   { // 05. Smart Job Tracker project
     id: "primeldh-victorreanz",
     category: "Full stack",
-    title: "5.PrimeLDH-VictorReanz",
+    title: "PrimeLDH-VictorReinz",
     src: "/assets/projects-screenshots/5.PrimeLDH-VictorReanz/Home.png",
     screenshots: ["Home.png", "Filtering.png", "Layout.png", "Login.png", "Sorting.png"],
     live: "http://victorreinz.legacydatahub.com/",
@@ -571,7 +571,7 @@ const projects: Project[] = [
   { // 06. Land use and Land Covr Mapping using Random Forest Project
     id: "savinderpurisportfolio",
     category: "Machine Learning",
-    title: "Land Use and Land Cover Mapping using Radom Forest",
+    title: "Land Use and Land Cover Mapping",
     src: "/assets/projects-screenshots/savinderpuriportfolio/01.png",
     screenshots: ["01.png", "02.png", "03.png","04.png","05.png"],
     live: "https://savinder-puri.vercel.app/",
