@@ -898,7 +898,7 @@ const projects: Project[] = [
   },
   { // 03. Portfolio project
     id: "portfolio",
-    category: "Artificial Intelligence",
+    category: "Web Development",
     title: "My Portfolio",
     src: "/assets/projects-screenshots/myportfolio/landing.png",
     screenshots: ["assets/projects-screenshots/myportfolio/landing.png"],
@@ -964,7 +964,7 @@ const projects: Project[] = [
   },
   { // 04. Smart parking assitant
     id: "smartparkingassitant",
-    category: "IoT",
+    category: "AI",
     title: "Smart Parking Assistant",
     src: "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
     screenshots: ["01.jpeg", "03.png"],
@@ -1036,7 +1036,7 @@ const projects: Project[] = [
   },
   { // 06. Savinder Puri portfolio project
     id: "savinderpurisportfolio",
-    category: "Web Development",
+    category: "Machine Learning",
     title: "Savinder Puri Portfolio",
     src: "/assets/projects-screenshots/savinderpuriportfolio/01.png",
     screenshots: ["01.png", "02.png", "03.png","04.png","05.png"],
