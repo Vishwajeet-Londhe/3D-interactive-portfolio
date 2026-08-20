@@ -305,14 +305,14 @@ export type Project = {
   live: string;
 };
 const projects: Project[] = [
-  { // 01. AI Docker file optimizer project
-    id: "aidockerfileoptimizer",
-    category: "AI/ML + Web Development",
-    title: "AI Dockerfile Optimizer",
-    src: "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
-    screenshots: ["1.png", "2.png", "3.png"],
+  { // 01. KrishiRakshak project
+    id: "krishirakshak",
+    category: "AI/ML + Full Stack",
+    title: "KrishiRakshak: AI-Powered Plant Disease Detection and Pest Management",
+    src: "/assets/projects-screenshots/1.Krishi-Hackathon/1.png",
+    screenshots: ["1.png", "Disease.jpg", "Government Scheme.png", "History.jpg", "Home.jpg", "Weather Based Prediction.png"],
     live: "https://ai-docker-file-optimizer.netlify.app/",
-    github:"https://github.com/Abhiz2411/AI-Docker-file-optimizer",
+    github:"https://github.com/Vishwajeet-Londhe/hackathon-KrishiRakshak",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [PROJECT_SKILLS.openai,PROJECT_SKILLS.netlify],
@@ -321,29 +321,31 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            AI-Docker-file-optimizer helps optimize Dockerfiles for smaller, more efficient images. 
-            Simply paste your Dockerfile, and the app analyzes it for best practices and size 
-            optimization tips. It then provides a refactored, optimized version of the Dockerfile. 
-            Deployed on Vercel, it ensures fast and easy access to Dockerfile optimization.
+            KrishiRakshak helps farmers detect plant diseases and manage pests using AI-powered image analysis. 
+            Simply upload an image of a plant, and the app provides a diagnosis and recommended solutions. 
+            Deployed on Vercel, it ensures fast and easy access to plant health management.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/aidockerfileoptimizer/1.png`,
-              `${BASE_PATH}/aidockerfileoptimizer/2.png`,
-              `${BASE_PATH}/aidockerfileoptimizer/3.png`,
+              `${BASE_PATH}/1.Krishi-Hackathon/1.png`,
+              `${BASE_PATH}/1.Krishi-Hackathon/Disease.jpg`,
+              `${BASE_PATH}/1.Krishi-Hackathon/Government Scheme.png`,
+              `${BASE_PATH}/1.Krishi-Hackathon/History.jpg`,
+              `${BASE_PATH}/1.Krishi-Hackathon/Home.jpg`,
+              `${BASE_PATH}/1.Krishi-Hackathon/Weather Based Prediction.png`,
             ]}
           />
         </div>
       );
     },
   },
-  { // 02. FinanceMe project
-    id: "financeme",
+  { // 02. Face Mask Detection project
+    id: "face-mask-detection",
     category: "Machine Learning",
-    title: "FinanceMe: Complete DevOps Capstone Project",
-    src: "/assets/projects-screenshots/financeme/1.png",
-    screenshots: ["/assets/projects-screenshots/financeme/1.png"],
+    title: "Face Mask Detection",
+    src: "/assets/projects-screenshots/2.Face Mask Detection/Mask.png",
+    screenshots: ["Mask.png", "No Mask.png", "Training Model.png", "With Mask Dataset.png", "Without Mask Dataset.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.html,
@@ -358,7 +360,7 @@ const projects: Project[] = [
       ],
     },
     live: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
-    github: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
+    github: "https://github.com/Vishwajeet-Londhe/Face-Mask-Detector",
     get content() {
       return (
         <div>
@@ -383,8 +385,8 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/financeme/1.png`,
-              `${BASE_PATH}/financeme/2.png`,
+              `${BASE_PATH}/2.Face-Mask-Detection/Mask.png`,
+              `${BASE_PATH}/2.Face-Mask-Detection/No Mask.png`,
             ]}
           />
           <TypographyH3 className="my-4 mt-8">Automating Infrastructure Provisioning</TypographyH3>
@@ -397,8 +399,8 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/financeme/4_A.png`,
-              `${BASE_PATH}/financeme/4.png`,
+              `${BASE_PATH}/2.Face-Mask-Detection/Training Model.png`,
+              `${BASE_PATH}/2.Face-Mask-Detection/With Mask Dataset.png`,
             ]}
           />
           <TypographyH3 className="my-4 mt-8">Build and Deployment Automation</TypographyH3>
@@ -411,9 +413,7 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/financeme/5.png`,
-              `${BASE_PATH}/financeme/6.png`,
-              `${BASE_PATH}/financeme/7.png`,
+              `${BASE_PATH}/2.Face-Mask-Detection/Without Mask Dataset.png`,
             ]}
           />
           <TypographyH3 className="my-4 mt-8">Continuous Monitoring </TypographyH3>
@@ -423,10 +423,7 @@ const projects: Project[] = [
             Grafana Dashboard is created to visualize these metrics for continuous monitoring.
           </p>
           <SlideShow images={[
-                `${BASE_PATH}/financeme/3.png`,
-                `${BASE_PATH}/financeme/8.png`,
-                `${BASE_PATH}/financeme/9.png`,
-                `${BASE_PATH}/financeme/10.png`,
+                `${BASE_PATH}/2.Face-Mask-Detection/Mask.png`,
             ]} />
         </div>
       );
@@ -436,8 +433,8 @@ const projects: Project[] = [
     id: "portfolio",
     category: "Web Development",
     title: "My Portfolio",
-    src: "/assets/projects-screenshots/myportfolio/landing.png",
-    screenshots: ["assets/projects-screenshots/myportfolio/landing.png"],
+    src: "/assets/projects-screenshots/3.myportfolio/landing.png",
+    screenshots: ["landing.png", "navbar.png", "projects.png", "project.png", "blog.png"],
     live: "https://www.vishwajeetlondhe.me/",
     github:"https://github.com/Vishwajeet-Londhe/3D-interactive-portfolio",
     skills: {
@@ -471,15 +468,15 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/myportfolio/landing.png`,
-              `${BASE_PATH}/portfolio/skills.png`,
+              `${BASE_PATH}/3.myportfolio/landing.png`,
+              `${BASE_PATH}/3.myportfolio/navbar.png`,
             ]}
           />
           <TypographyH3 className="my-4 ">Space Theme</TypographyH3>
           <p className="font-mono mb-2">
             Dark background + floating particles = out-of-this-world cool.
           </p>
-          <SlideShow images={[`${BASE_PATH}/myportfolio/navbar.png`]} />
+          <SlideShow images={[`${BASE_PATH}/3.myportfolio/blog.png`]} />
           <TypographyH3 className="my-4 mt-8">Projects</TypographyH3>
 
           <p className="font-mono mb-2">
@@ -487,8 +484,8 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/myportfolio/projects.png`,
-              `${BASE_PATH}/myportfolio/project.png`,
+              `${BASE_PATH}/3.myportfolio/projects.png`,
+              `${BASE_PATH}/3.myportfolio/project.png`,
             ]}
           />
           <p className="font-mono mb-2 mt-8 text-center">
@@ -499,13 +496,13 @@ const projects: Project[] = [
     },
   },
   { // 04. Smart parking assitant
-    id: "smartparkingassitant",
+    id: "rag-chatbot",
     category: "AI",
-    title: "Smart Parking Assistant",
-    src: "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
-    screenshots: ["01.jpeg", "03.png"],
+    title: "RAG Based ChatBot",
+    src: "/assets/projects-screenshots/4.RAG-CHATBOT/Home.png",
+    screenshots: ["Home.png", "Detect Policy Contradictions.png", "Extra Features.png", "Ingesting Document.png", "Rag Working.png", "Relevance Score.png"],
     live: "https://github.com/Abhiz2411/smart-parking-assistant",
-    github:"https://github.com/Abhiz2411/smart-parking-assistant",
+    github:"https://github.com/Vishwajeet-Londhe/potens-intern-AI-ML-vishwajeet-londhe",
     skills: {
       frontend: [PROJECT_SKILLS.python],
       backend: [PROJECT_SKILLS.cplusplus, PROJECT_SKILLS.arduino],
@@ -523,9 +520,12 @@ const projects: Project[] = [
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/smartparkingassitant/01.jpeg`,
-              `${BASE_PATH}/smartparkingassitant/03.png`,
-              `${BASE_PATH}/smartparkingassitant/04.jpg`,
+              `${BASE_PATH}/4.RAG-CHATBOT/Home.png`,
+              `${BASE_PATH}/4.RAG-CHATBOT/Detect Policy Contradictions.png`,
+              `${BASE_PATH}/4.RAG-CHATBOT/Extra Features.png`,
+              `${BASE_PATH}/4.RAG-CHATBOT/Ingesting Document.png`,
+              `${BASE_PATH}/4.RAG-CHATBOT/Rag Working.png`,
+              `${BASE_PATH}/4.RAG-CHATBOT/Relevance Score.png`,
             ]}
           />
         </div>
@@ -533,13 +533,13 @@ const projects: Project[] = [
     },
   },
   { // 05. Smart Job Tracker project
-    id: "smartjobtracker",
+    id: "primeldh-victorreanz",
     category: "Full stack",
-    title: "Smart Job Tracker",
-    src: "/assets/projects-screenshots/smartjobtracker/02.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png","06.png","07.png"],
-    live: "https://job-tracker-application-eight.vercel.app/",
-    github:"https://github.com/Abhiz2411/Job-tracker-application",
+    title: "5.PrimeLDH-VictorReanz",
+    src: "/assets/projects-screenshots/5.PrimeLDH-VictorReanz/Home.png",
+    screenshots: ["Home.png", "Filtering.png", "Layout.png", "Login.png", "Sorting.png"],
+    live: "http://victorreinz.legacydatahub.com/",
+    github:"",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [PROJECT_SKILLS.firebase],
@@ -557,23 +557,21 @@ const projects: Project[] = [
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/smartjobtracker/01.png`,
-              `${BASE_PATH}/smartjobtracker/02.png`,
-              `${BASE_PATH}/smartjobtracker/03.png`,
-              `${BASE_PATH}/smartjobtracker/04.png`,
-              `${BASE_PATH}/smartjobtracker/05.png`,
-              `${BASE_PATH}/smartjobtracker/06.png`,
-              `${BASE_PATH}/smartjobtracker/07.png`,
+              `${BASE_PATH}/5.PrimeLDH-VictorReanz/Home.png`,
+              `${BASE_PATH}/5.PrimeLDH-VictorReanz/Filtering.png`,
+              `${BASE_PATH}/5.PrimeLDH-VictorReanz/Layout.png`,
+              `${BASE_PATH}/5.PrimeLDH-VictorReanz/Login.png`,
+              `${BASE_PATH}/5.PrimeLDH-VictorReanz/Sorting.png`,
             ]}
           />
         </div>
       );
     },
   },
-  { // 06. Savinder Puri portfolio project
+  { // 06. Land use and Land Covr Mapping using Random Forest Project
     id: "savinderpurisportfolio",
     category: "Machine Learning",
-    title: "Savinder Puri Portfolio",
+    title: "Land Use and Land Cover Mapping using Radom Forest",
     src: "/assets/projects-screenshots/savinderpuriportfolio/01.png",
     screenshots: ["01.png", "02.png", "03.png","04.png","05.png"],
     live: "https://savinder-puri.vercel.app/",
