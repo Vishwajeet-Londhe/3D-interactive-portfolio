@@ -66,6 +66,26 @@ const STATES = {
       },
     },
   },
+  experience: {
+    desktop: {
+      scale: { x: 0.34, y: 0.34, z: 0.34 },
+      position: { x: 260, y: -80, z: 0 },
+      rotation: {
+        x: 0,
+        y: -Math.PI / 10,
+        z: 0,
+      },
+    },
+    mobile: {
+      scale: { x: 0.18, y: 0.18, z: 0.18 },
+      position: { x: 0, y: -30, z: 0 },
+      rotation: {
+        x: 0,
+        y: -Math.PI / 8,
+        z: 0,
+      },
+    },
+  },
   projects: {
     desktop: {
       scale: { x: 0.3, y: 0.3, z: 0.3 },
@@ -108,7 +128,13 @@ const STATES = {
   },
 };
 
-type Section = "hero" | "about" | "skills" | "projects" | "contact";
+type Section =
+  | "hero"
+  | "about"
+  | "skills"
+  | "experience"
+  | "projects"
+  | "contact";
 
 const AnimatedBackground = () => {
   const { isLoading, bypassLoading } = usePreloader();
@@ -407,6 +433,45 @@ const AnimatedBackground = () => {
     });
     gsap.timeline({
       scrollTrigger: {
+        trigger: "#experience",
+        start: "top 70%",
+        end: "bottom 35%",
+        scrub: true,
+        onEnter: () => {
+          setActiveSection("experience");
+          window.dispatchEvent(new CustomEvent("skills-experience-transition"));
+          gsap.to(kbd.scale, {
+            ...keyboardStates("experience").scale,
+            duration: 1,
+          });
+          gsap.to(kbd.position, {
+            ...keyboardStates("experience").position,
+            duration: 1,
+          });
+          gsap.to(kbd.rotation, {
+            ...keyboardStates("experience").rotation,
+            duration: 1,
+          });
+        },
+        onLeaveBack: () => {
+          setActiveSection("skills");
+          gsap.to(kbd.scale, {
+            ...keyboardStates("skills").scale,
+            duration: 1,
+          });
+          gsap.to(kbd.position, {
+            ...keyboardStates("skills").position,
+            duration: 1,
+          });
+          gsap.to(kbd.rotation, {
+            ...keyboardStates("skills").rotation,
+            duration: 1,
+          });
+        },
+      },
+    });
+    gsap.timeline({
+      scrollTrigger: {
         trigger: "#projects",
         start: "top 70%",
         end: "bottom bottom",
@@ -428,17 +493,17 @@ const AnimatedBackground = () => {
           });
         },
         onLeaveBack: () => {
-          setActiveSection("skills");
+          setActiveSection("experience");
           gsap.to(kbd.scale, {
-            ...keyboardStates("skills").scale,
+            ...keyboardStates("experience").scale,
             duration: 1,
           });
           gsap.to(kbd.position, {
-            ...keyboardStates("skills").position,
+            ...keyboardStates("experience").position,
             duration: 1,
           });
           gsap.to(kbd.rotation, {
-            ...keyboardStates("skills").rotation,
+            ...keyboardStates("experience").rotation,
             duration: 1,
           });
           // gsap.to(kbd.rotation, { x: 0, duration: 1 });

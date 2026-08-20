@@ -29,12 +29,21 @@ const NyanCat = () => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "n") spawnDiv();
     };
+    const handleSectionTransition = () => spawnDiv();
 
     window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener(
+      "skills-experience-transition",
+      handleSectionTransition
+    );
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener(
+        "skills-experience-transition",
+        handleSectionTransition
+      );
     };
-  });
+  }, []);
 
   return (
     <div className="fixed left-0 top-0 w-screen h-screen overflow-hidden z-[-1]">
