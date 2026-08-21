@@ -305,7 +305,7 @@ export type Project = {
   live: string;
 };
 const projects: Project[] = [
-  { // 01. KrishiRakshak project
+  { // 01. KrishiRakshak Hackathon project
     id: "krishirakshak",
     category: "AI/ML + Full Stack",
     title: "Crop Disease And Pest Control",
@@ -495,7 +495,7 @@ const projects: Project[] = [
       );
     },
   },
-  { // 04. Smart parking assitant
+  { // 04. AI Chatbot project
     id: "rag-chatbot",
     category: "AI",
     title: "RAG Based ChatBot",
@@ -532,7 +532,7 @@ const projects: Project[] = [
       );
     },
   },
-  { // 05. Smart Job Tracker project
+  { // 05. Internship Project - PrimeLDH-VictorReinz
     id: "primeldh-victorreanz",
     category: "Full stack",
     title: "PrimeLDH-VictorReinz",
@@ -568,14 +568,14 @@ const projects: Project[] = [
       );
     },
   },
-  { // 06. Land use and Land Covr Mapping using Random Forest Project
-    id: "savinderpurisportfolio",
+  { // 06. Land use and Land Cover Mapping using Random Forest Project
+    id: "LULC",
     category: "Machine Learning",
     title: "Land Use and Land Cover Mapping",
-    src: "/assets/projects-screenshots/savinderpuriportfolio/01.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png"],
-    live: "https://savinder-puri.vercel.app/",
-    github:"https://github.com/Abhiz2411/savinder-puri",
+    src: "/assets/projects-screenshots/6.LULC/Result Project.png",
+    screenshots: ["01.png", "02.png", "03.png","04.png","05.png","06.png"],
+    live: "",
+    github:"",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [],
@@ -593,11 +593,12 @@ const projects: Project[] = [
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/savinderpuriportfolio/01.png`,
-              `${BASE_PATH}/savinderpuriportfolio/02.png`,
-              `${BASE_PATH}/savinderpuriportfolio/03.png`,
-              `${BASE_PATH}/savinderpuriportfolio/04.png`,
-              `${BASE_PATH}/savinderpuriportfolio/05.png`,
+              `${BASE_PATH}/6.LULC/01.png`,
+              `${BASE_PATH}/6.LULC/02.png`,
+              `${BASE_PATH}/6.LULC/03.png`,
+              `${BASE_PATH}/6.LULC/04.png`,
+              `${BASE_PATH}/6.LULC/05.png`,
+              `${BASE_PATH}/6.LULC/06.png`,
             ]}
           />
         </div>
