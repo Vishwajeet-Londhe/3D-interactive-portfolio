@@ -18,6 +18,9 @@ import RemoteCursors from "@/components/realtime/remote-cursors";
 export const metadata: Metadata = {
   title: config.title,
   description: config.description.long,
+  icons: {
+    icon: "assets/icons/favicon.png",
+  },
   keywords: config.keywords,
   authors: [{ name: config.author }],
   openGraph: {
