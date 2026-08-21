@@ -573,7 +573,7 @@ const projects: Project[] = [
     category: "Machine Learning",
     title: "Land Use and Land Cover Mapping",
     src: "/assets/projects-screenshots/6.LULC/Result Project.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png","06.png"],
+    screenshots: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"],
     live: "",
     github:"",
     skills: {
@@ -593,12 +593,12 @@ const projects: Project[] = [
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/6.LULC/01.png`,
-              `${BASE_PATH}/6.LULC/02.png`,
-              `${BASE_PATH}/6.LULC/03.png`,
-              `${BASE_PATH}/6.LULC/04.png`,
-              `${BASE_PATH}/6.LULC/05.png`,
-              `${BASE_PATH}/6.LULC/06.png`,
+              `${BASE_PATH}/6.LULC/1.png`,
+              `${BASE_PATH}/6.LULC/2.png`,
+              `${BASE_PATH}/6.LULC/3.png`,
+              `${BASE_PATH}/6.LULC/4.png`,
+              `${BASE_PATH}/6.LULC/5.png`,
+              `${BASE_PATH}/6.LULC/6.png`,
             ]}
           />
         </div>
