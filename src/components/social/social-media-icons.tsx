@@ -12,22 +12,22 @@ const BUTTONS = [
   {
     name: "Github",
     href: config.social.github,
-    icon: <SiGithub size={"24"} color={"#fff"} />,
+    icon: <SiGithub size={24} />,
   },
   {
     name: "LinkedIn",
     href: config.social.linkedin,
-    icon: <SiLinkedin size={"24"} color={"#fff"} />,
+    icon: <SiLinkedin size={24} />,
   },
   {
     name: "LeetCode",
     href: config.social.leetcode,
-    icon: <SiLeetcode size={"24"} color={"#fff"} />,
+    icon: <SiLeetcode size={24} />,
   },
   {
     name: "Instagram",
     href: config.social.instagram,
-    icon: <SiInstagram size={"24"} color={"#fff"} />,
+    icon: <SiInstagram size={24} />,
   },
 ];
 
@@ -35,7 +35,7 @@ const SocialMediaButtons = () => {
   const ref = useRef<HTMLDivElement>(null);
   const show = useInView(ref, { once: true });
   return (
-    <div ref={ref} className="z-10">
+    <div ref={ref} className="z-10 text-black dark:text-white">
       {show &&
         BUTTONS.map((button) => (
           <Link href={button.href} key={button.name} target="_blank">

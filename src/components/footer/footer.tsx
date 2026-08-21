@@ -21,6 +21,8 @@ function Footer() {
             <Link
               className="text-xs underline-offset-4 hover:underline"
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               key={`l_${index}`}
             >
               <Button variant={"link"}>{title}</Button>
