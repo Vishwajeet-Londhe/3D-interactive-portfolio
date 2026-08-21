@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Archivo_Black } from "next/font/google";
-import "./globals.css";
+import "./globals.css"; 
 import ElasticCursor from "@/components/ui/ElasticCursor";
 import Particles from "@/components/Particles";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -18,6 +18,9 @@ import RemoteCursors from "@/components/realtime/remote-cursors";
 export const metadata: Metadata = {
   title: config.title,
   description: config.description.long,
+  icons: {
+    icon: "/assets/icons/favicon.png",
+  },
   keywords: config.keywords,
   authors: [{ name: config.author }],
   openGraph: {
