@@ -311,7 +311,7 @@ const projects: Project[] = [
     title: "Crop Disease And Pest Control",
     src: "/assets/projects-screenshots/1.Krishi-Hackathon/Home.jpg",
     screenshots: ["1.png", "Disease.jpg", "Government Scheme.png", "History.jpg", "Home.jpg", "Weather Based Prediction.png"],
-    live: "https://ai-docker-file-optimizer.netlify.app/",
+    live: "https://github.com/Vishwajeet-Londhe/hackathon-KrishiRakshak",
     github:"https://github.com/Vishwajeet-Londhe/hackathon-KrishiRakshak",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
@@ -323,7 +323,7 @@ const projects: Project[] = [
           <TypographyP className="font-mono ">
             KrishiRakshak helps farmers detect plant diseases and manage pests using AI-powered image analysis. 
             Simply upload an image of a plant, and the app provides a diagnosis and recommended solutions. 
-            Deployed on Vercel, it ensures fast and easy access to plant health management.
+            The project provides fast and easy access to plant health management.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
@@ -364,24 +364,16 @@ const projects: Project[] = [
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            FinanceMe: Complete DevOps Capstone Project
-          </TypographyP>
           <TypographyP className="font-mono ">
-            This project demonstrates the deployment of a DevOps pipeline for a global banking and
-            financial services provider, FinanceMe. The company transitioned from a monolithic 
-            architecture to a microservice-based architecture to handle increased traffic and 
-            scaling challenges. The project involves automating infrastructure provisioning, build 
-            and deployment processes, and continuous monitoring using modern DevOps tools and 
-            AWS services.?
+            Face Mask Detection uses a trained machine learning model to identify whether a person
+            is wearing a mask. The screenshots show the training process, datasets, and prediction
+            results for masked and unmasked faces.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Architecture </TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Detection Results</TypographyH3>
           <p className="font-mono mb-2">
-            The project is divided into three main phases:
-            1.Automating Infrastructure Provisioning
-            2.Build and Deployment Automation
-            3.Continuous Monitoring
+            The model is evaluated with masked and unmasked face images so its predictions can be
+            checked against the training data.
           </p>
           <SlideShow
             images={[
@@ -389,13 +381,10 @@ const projects: Project[] = [
               `${BASE_PATH}/2.Face-Mask-Detection/No Mask.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Automating Infrastructure Provisioning</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Training Data</TypographyH3>
           <p className="font-mono mb-2">
-          Terraform is used to create 4 AWS EC2 instances:
-            Jenkins Master Node (for CI/CD pipeline management)
-            Build Server (for application and Docker image builds)
-            Production Server (for deploying Dockerized applications)
-            Monitoring Server (for continuous monitoring of Build and Prod servers)
+            The dataset contains separate masked and unmasked face examples used to train and
+            evaluate the classifier.
           </p>
           <SlideShow
             images={[
@@ -403,24 +392,21 @@ const projects: Project[] = [
               `${BASE_PATH}/2.Face-Mask-Detection/With Mask Dataset.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Build and Deployment Automation</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Model Evaluation</TypographyH3>
 
           <p className="font-mono mb-2">
-          Jenkins is configured for a CI/CD pipeline:
-            Jenkins Master Node is responsible for pipeline orchestration.
-            Build Server is configured as a Jenkins Slave Node to handle application builds and Docker image creation.
-            Ansible is used for automating deployment to the Prod server, where the application is deployed using an Ansible client-server model.
+            The final samples demonstrate how the trained model classifies faces as wearing a mask
+            or not wearing a mask.
           </p>
           <SlideShow
             images={[
               `${BASE_PATH}/2.Face-Mask-Detection/Without Mask Dataset.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Continuous Monitoring </TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Additional Examples</TypographyH3>
           <p className="font-mono mb-2">
-          Prometheus and Grafana are used for real-time monitoring:
-            Node Exporter is installed on both Build and Prod servers to collect server metrics (CPU, Disk Space, Memory Utilization).
-            Grafana Dashboard is created to visualize these metrics for continuous monitoring.
+            More prediction examples are included to show the detector working across different
+            face images.
           </p>
           <SlideShow images={[
                 `${BASE_PATH}/2.Face-Mask-Detection/Mask.png`,
@@ -501,21 +487,19 @@ const projects: Project[] = [
     title: "RAG Based ChatBot",
     src: "/assets/projects-screenshots/4.RAG-CHATBOT/Home.png",
     screenshots: ["Home.png", "Detect Policy Contradictions.png", "Extra Features.png", "Ingesting Document.png", "Rag Working.png", "Relevance Score.png"],
-    live: "https://github.com/Abhiz2411/smart-parking-assistant",
+    live: "https://github.com/Vishwajeet-Londhe/potens-intern-AI-ML-vishwajeet-londhe",
     github:"https://github.com/Vishwajeet-Londhe/potens-intern-AI-ML-vishwajeet-londhe",
     skills: {
       frontend: [PROJECT_SKILLS.python],
-      backend: [PROJECT_SKILLS.cplusplus, PROJECT_SKILLS.arduino],
+      backend: [PROJECT_SKILLS.openai],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Transform parking with the Smart Parking Assistant, an IoT marvel powered by Arduino 
-            and IR sensors to detect and recommend the best spots in real-time. Enjoy a sleek GUI 
-            that visualizes availability and an intelligent system for quick, optimal decisions. 
-            Built to adapt with customizable hardware and Python-powered software for seamless 
-            integration. Say goodbye to parking woes and hello to smarter space utilization!
+            This retrieval-augmented chatbot ingests policy documents and answers questions using
+            the relevant source content. It can detect contradictions, show relevance scores, and
+            expose the document-ingestion and retrieval steps used to produce each answer.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
@@ -548,11 +532,9 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Track your job applications effortlessly with a sleek, dark-themed app that lets you 
-            manage, filter, and visualize your job search. Organize your applications with a 
-            Kanban board, monitor progress through status updates, and store everything securely. 
-            Enjoy seamless access across devices with a responsive design and email reminders for 
-            interviews. A smarter, more intuitive way to stay on top of your job hunt!
+            PrimeLDH-VictorReinz is a product catalogue application for browsing Victor Reinz
+            parts. It provides authenticated access plus filtering, sorting, and structured product
+            views to help users find the right catalogue information quickly.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
@@ -577,18 +559,16 @@ const projects: Project[] = [
     live: "",
     github:"",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
+      frontend: [PROJECT_SKILLS.python],
       backend: [],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Step into the digital world of Savinder Puri, the beloved DevOps guru and Spiritual 
-            Alchemist, with this responsive portfolio website. 🌐✨ Explore his inspiring journey, 
-            milestones, and life-changing services blending tech and spirituality. Built with 
-            modern tools like React and TypeScript, it’s a heartfelt tribute to a mentor who 
-            transforms lives. 💻🕊️ Crafted with ❤️ by Abhijit Zende! 🚀
+            This project maps land use and land cover with a Random Forest machine learning model.
+            The results compare classified geographic regions and display them on an interactive
+            map for visual analysis.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
