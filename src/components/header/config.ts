@@ -33,7 +33,8 @@ const links: Link[] = [
   // },
   {
     title: 'Blogs',
-    href: '/blogs',
+    href: 'https://medium.com/@Vishwajeet_Londhe',
+    target: '_blank',
     thumbnail: '/assets/nav-link-previews/blog.png',
   },
   {
